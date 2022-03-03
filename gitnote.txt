@@ -1,0 +1,16 @@
+把这个目录变成Git可以管理的仓库
+$git init 
+
+把文件添加到git仓库
+$ git add name.txt
+
+把文件提交到仓库
+$ git commit -m "wrote a readme file"
+
+创建Git仓库和GitHub仓库之间的传输
+	1.创建SSH Key
+	$ ssh-keygen -t rsa -C "youremail@example.com"
+	2. 将 id_rsa.pub 复制到 GitHub setting SSH keys
+
+git 命令解释网站
+https://www.runoob.com/git/git-commit.html
