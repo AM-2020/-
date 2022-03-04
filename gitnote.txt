@@ -1,3 +1,4 @@
+1.git
 把这个目录变成Git可以管理的仓库
 $git init 
 
@@ -14,3 +15,39 @@ $ git commit -m "wrote a readme file"
 
 git 命令解释网站
 https://www.runoob.com/git/git-commit.html
+
+2. 
+GET and POST
+	Get把参数包含在url，Post 通过request body 传递参数
+	Get只能进行url编码， Post 支持多种编码方式
+	Get参数有长度限制， Post没有
+	Get暴露信息更加直接，不安全
+
+content-type
+	application/X-www-form-urlencoded 方式提交数据
+	Multipart/form-data
+	application/json
+
+提交表单数据
+	直接在script写function
+ 		function checkForm(){
+			$("#myform").submit()
+		}
+	
+	监听方式
+		$(document).ready(function(){
+			$(#myform").submit()
+		})
+	ajax方式
+		$.ajax({
+			type:"post"		
+			url:"http://127.0.0.1:8000"
+			data:$("#myform").serialize()
+			success:function(data){
+				console.log(data)
+			}
+		})
+			
+
+
+
